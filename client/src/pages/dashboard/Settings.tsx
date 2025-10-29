@@ -99,14 +99,15 @@ export default function Settings() {
               <h2 className="text-2xl font-semibold">Assinatura</h2>
               <div className="flex items-center justify-between p-4 rounded-lg bg-primary/10 border border-primary/20">
                 <div>
-                  <p className="font-semibold">Plano Founder Lifetime</p>
-                  <p className="text-sm text-muted-foreground">Acesso vitalício ativo</p>
+                  <p className="font-semibold">Plano Mensal</p>
+                  <p className="text-sm text-muted-foreground">Assinatura ativa</p>
                 </div>
                 <div className="text-right">
-                  <p className="text-2xl font-bold text-primary">R$ 499</p>
-                  <p className="text-sm text-muted-foreground">Pagamento único</p>
+                  <p className="text-2xl font-bold text-primary">R$ 99</p>
+                  <p className="text-sm text-muted-foreground">/mês</p>
                 </div>
               </div>
+              <Button variant="outline">Gerenciar Assinatura</Button>
             </div>
           </div>
         </div>

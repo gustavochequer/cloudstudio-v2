@@ -42,3 +42,9 @@
 - [ ] Configurar deploy na Vercel (Ação do usuário)
 - [ ] Verificar que o site está no ar e funcionando (Ação do usuário)
 
+
+
+## Alterações Solicitadas
+- [x] Remover oferta Founder de todas as páginas
+- [x] Manter apenas plano mensal R$ 99
+

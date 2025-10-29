@@ -53,7 +53,7 @@ export default function Home() {
               </Link>
               <Link href="/pricing">
                 <Button size="lg" variant="outline">
-                  Ver Oferta Founder
+                  Ver Preços
                 </Button>
               </Link>
             </div>
@@ -105,15 +105,14 @@ export default function Home() {
         <section className="container py-20 border-t border-border/40">
           <div className="max-w-3xl mx-auto text-center space-y-6 p-12 rounded-2xl bg-gradient-to-br from-primary/10 to-primary/5 border border-primary/20">
             <h2 className="text-3xl md:text-4xl font-bold">
-              Oferta Exclusiva para Founders
+              Comece a criar posts incríveis hoje
             </h2>
             <p className="text-xl text-muted-foreground">
-              Acesso vitalício por <span className="text-primary font-bold">R$ 499</span> ou 
-              plano mensal por <span className="text-primary font-bold">R$ 99</span>.
+              Plano mensal por apenas <span className="text-primary font-bold">R$ 99</span>.
             </p>
             <Link href="/pricing">
               <Button size="lg" className="gap-2">
-                Ver Detalhes da Oferta <ArrowRight className="w-4 h-4" />
+                Ver Planos <ArrowRight className="w-4 h-4" />
               </Button>
             </Link>
           </div>
