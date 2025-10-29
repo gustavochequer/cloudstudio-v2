@@ -1,7 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
-import { Sparkles, ArrowRight, ArrowLeft } from "lucide-react";
+import Logo from "@/components/Logo";
+import { ArrowRight, ArrowLeft } from "lucide-react";
 import { useState } from "react";
 import { Link, useLocation } from "wouter";
 import { toast } from "sonner";
@@ -75,7 +76,7 @@ export default function DNA() {
         <div className="container flex items-center justify-between">
           <Link href="/">
             <a className="inline-flex items-center gap-2 text-xl font-bold hover:text-primary transition-colors">
-              <Sparkles className="w-5 h-5 text-primary" />
+              <img src="/logo.png" alt="CloudStudio" className="w-5 h-5 " style={{ filter: "brightness(0) saturate(100%) invert(56%) sepia(89%) saturate(2476%) hue-rotate(225deg) brightness(101%) contrast(101%)" }} />
               CloudStudio
             </a>
           </Link>
@@ -98,7 +99,7 @@ export default function DNA() {
         <div className="w-full max-w-2xl space-y-8">
           <div className="space-y-4">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-sm">
-              <Sparkles className="w-4 h-4 text-primary" />
+              <img src="/logo.png" alt="CloudStudio" className="w-4 h-4 " style={{ filter: "brightness(0) saturate(100%) invert(56%) sepia(89%) saturate(2476%) hue-rotate(225deg) brightness(101%) contrast(101%)" }} />
               <span>Definindo o DNA da sua marca</span>
             </div>
             

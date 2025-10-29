@@ -1,7 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import { Sparkles, Download, MessageSquare, Calendar, Settings, Wand2 } from "lucide-react";
+import Logo from "@/components/Logo";
+import { Download, MessageSquare, Calendar, Settings, Wand2, Loader2 } from "lucide-react";
 import { useState } from "react";
 import { Link } from "wouter";
 import { toast } from "sonner";
@@ -43,7 +44,7 @@ export default function Studio() {
       <aside className="w-64 border-r border-border/40 p-6 space-y-6">
         <Link href="/">
           <a className="inline-flex items-center gap-2 text-xl font-bold hover:text-primary transition-colors">
-            <Sparkles className="w-6 h-6 text-primary" />
+            <img src="/logo.png" alt="CloudStudio" className="w-6 h-6 " style={{ filter: "brightness(0) saturate(100%) invert(56%) sepia(89%) saturate(2476%) hue-rotate(225deg) brightness(101%) contrast(101%)" }} />
             CloudStudio
           </a>
         </Link>
@@ -110,7 +111,7 @@ export default function Studio() {
                 >
                   {isGenerating ? (
                     <>
-                      <Sparkles className="w-5 h-5 animate-spin" />
+                      <Loader2 className="w-5 h-5 animate-spin" />
                       Gerando...
                     </>
                   ) : (
@@ -172,7 +173,7 @@ export default function Studio() {
               ) : (
                 <div className="h-full flex items-center justify-center p-12 rounded-lg bg-card border border-border border-dashed">
                   <div className="text-center space-y-4">
-                    <Sparkles className="w-16 h-16 text-muted-foreground mx-auto" />
+                    <Loader2 className="w-16 h-16 text-muted-foreground mx-auto" />
                     <p className="text-muted-foreground">
                       Seu post aparecerá aqui após a geração
                     </p>

@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { Sparkles } from "lucide-react";
+import Logo from "@/components/Logo";
 import { useState } from "react";
 import { Link, useLocation } from "wouter";
 import { toast } from "sonner";
@@ -29,7 +29,7 @@ export default function Login() {
         <div className="text-center space-y-2">
           <Link href="/">
             <a className="inline-flex items-center gap-2 text-2xl font-bold hover:text-primary transition-colors">
-              <Sparkles className="w-6 h-6 text-primary" />
+              <Logo className="w-6 h-6" />
               CloudStudio
             </a>
           </Link>

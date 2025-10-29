@@ -55,3 +55,9 @@
 - [x] Adicionar botão "Continuar com Google" na página de registro
 - [x] Implementar autenticação OAuth com Google (mockada)
 
+
+
+## Design
+- [x] Criar logo profissional para CloudStudio
+- [x] Substituir ícone Sparkles pelo logo customizado
+

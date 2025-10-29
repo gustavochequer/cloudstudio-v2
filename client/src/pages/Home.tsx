@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
-import { Sparkles, Zap, Target, ArrowRight } from "lucide-react";
+import { Zap, Target, ArrowRight } from "lucide-react";
 import { Link } from "wouter";
+import Logo from "@/components/Logo";
 
 export default function Home() {
   return (
@@ -9,7 +10,7 @@ export default function Home() {
       <header className="border-b border-border/40 backdrop-blur-sm sticky top-0 z-50">
         <div className="container flex items-center justify-between h-16">
           <div className="flex items-center gap-2">
-            <Sparkles className="w-6 h-6 text-primary" />
+            <Logo className="w-6 h-6" />
             <span className="font-bold text-xl">CloudStudio</span>
           </div>
           <nav className="flex items-center gap-6">
@@ -31,7 +32,7 @@ export default function Home() {
         <section className="container py-20 md:py-32">
           <div className="max-w-4xl mx-auto text-center space-y-8">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-sm">
-              <Sparkles className="w-4 h-4 text-primary" />
+              <Logo className="w-4 h-4" />
               <span>Seu Diretor de Marketing Virtual</span>
             </div>
             
@@ -90,7 +91,7 @@ export default function Home() {
 
               <div className="space-y-4 p-6 rounded-lg bg-card border border-border/40">
                 <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center">
-                  <Sparkles className="w-6 h-6 text-primary" />
+                  <Logo className="w-6 h-6" />
                 </div>
                 <h3 className="text-xl font-semibold">Consultor de Estilo</h3>
                 <p className="text-muted-foreground">

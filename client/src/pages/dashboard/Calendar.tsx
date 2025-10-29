@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
-import { Sparkles, MessageSquare, Calendar as CalendarIcon, Settings, Wand2, Plus } from "lucide-react";
+import Logo from "@/components/Logo";
+import { MessageSquare, Calendar as CalendarIcon, Settings, Wand2, Plus } from "lucide-react";
 import { Link } from "wouter";
 import { toast } from "sonner";
 
@@ -14,7 +15,7 @@ export default function Calendar() {
       <aside className="w-64 border-r border-border/40 p-6 space-y-6">
         <Link href="/">
           <a className="inline-flex items-center gap-2 text-xl font-bold hover:text-primary transition-colors">
-            <Sparkles className="w-6 h-6 text-primary" />
+            <img src="/logo.png" alt="CloudStudio" className="w-6 h-6 " style={{ filter: "brightness(0) saturate(100%) invert(56%) sepia(89%) saturate(2476%) hue-rotate(225deg) brightness(101%) contrast(101%)" }} />
             CloudStudio
           </a>
         </Link>
