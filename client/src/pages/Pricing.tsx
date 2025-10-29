@@ -16,19 +16,19 @@ export default function Pricing() {
       <AnimatedBackground />
       {/* Header */}
       <header className="border-b border-border/40 backdrop-blur-sm sticky top-0 z-50 relative">
-        <div className="container flex items-center justify-between h-16">
+        <div className="container flex items-center justify-between h-16 px-4">
           <Link href="/">
-            <a className="inline-flex items-center gap-2 text-xl font-bold hover:text-primary transition-colors">
+            <a className="inline-flex items-center gap-2 text-base sm:text-xl font-bold hover:text-primary transition-colors flex-shrink-0">
               <Logo className="w-6 h-6" />
               CloudStudio
             </a>
           </Link>
-          <nav className="flex items-center gap-4">
+          <nav className="flex items-center gap-2 sm:gap-4 flex-shrink-0">
             <Link href="/auth/login">
-              <Button variant="ghost" size="sm">Entrar</Button>
+              <Button variant="ghost" size="sm" className="hidden xs:inline-flex">Entrar</Button>
             </Link>
             <Link href="/auth/register">
-              <Button size="sm">Começar Grátis</Button>
+              <Button size="sm" className="text-xs sm:text-sm">Começar Grátis</Button>
             </Link>
           </nav>
         </div>

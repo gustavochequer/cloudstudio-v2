@@ -9,18 +9,18 @@ export default function Home() {
     <div className="min-h-screen flex flex-col bg-background text-foreground relative">
       <AnimatedBackground />
       {/* Header */}
-      <header className="border-b border-border/40 backdrop-blur-sm sticky top-0 z-50 relative px-4">
-        <div className="container flex items-center justify-between h-16">
-          <div className="flex items-center gap-2">
+      <header className="border-b border-border/40 backdrop-blur-sm sticky top-0 z-50 relative">
+        <div className="container flex items-center justify-between h-16 px-4">
+          <div className="flex items-center gap-2 flex-shrink-0">
             <Logo className="w-6 h-6" />
-            <span className="font-bold text-xl">CloudStudio</span>
+            <span className="font-bold text-base sm:text-xl">CloudStudio</span>
           </div>
-          <nav className="flex items-center gap-3 sm:gap-6 text-sm sm:text-base">
+          <nav className="flex items-center gap-2 sm:gap-4 md:gap-6 text-sm flex-shrink-0">
             <Link href="/pricing">
-              <a className="text-sm hover:text-primary transition-colors">Preços</a>
+              <a className="text-sm hover:text-primary transition-colors hidden sm:inline">Preços</a>
             </Link>
             <Link href="/auth/login">
-              <Button variant="ghost" size="sm">Entrar</Button>
+              <Button variant="ghost" size="sm" className="hidden xs:inline-flex">Entrar</Button>
             </Link>
             <Link href="/auth/register">
               <Button size="sm" className="text-xs sm:text-sm">Começar Grátis</Button>

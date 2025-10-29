@@ -76,3 +76,8 @@
 - [x] Ajustar cards e seções para empilhamento vertical
 - [x] Garantir botões com tamanho adequado para toque
 
+
+
+## Bugs
+- [x] Corrigir sobreposição de texto no header mobile (logo sobrepondo botões)
+
