@@ -36,9 +36,9 @@
 - [x] Adicionar navegação entre todas as páginas
 
 ## Marco 7: Testes Finais e Deploy
-- [ ] Testar todos os fluxos de usuário
-- [ ] Corrigir bugs encontrados
-- [ ] Fazer push para GitHub
-- [ ] Configurar deploy na Vercel
-- [ ] Verificar que o site está no ar e funcionando
+- [x] Testar todos os fluxos de usuário
+- [x] Corrigir bugs encontrados
+- [x] Fazer push para GitHub
+- [ ] Configurar deploy na Vercel (Ação do usuário)
+- [ ] Verificar que o site está no ar e funcionando (Ação do usuário)
 
