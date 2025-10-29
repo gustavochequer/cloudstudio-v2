@@ -2,12 +2,14 @@ import { Button } from "@/components/ui/button";
 import { Zap, Target, ArrowRight } from "lucide-react";
 import { Link } from "wouter";
 import Logo from "@/components/Logo";
+import AnimatedBackground from "@/components/AnimatedBackground";
 
 export default function Home() {
   return (
-    <div className="min-h-screen flex flex-col bg-background text-foreground">
+    <div className="min-h-screen flex flex-col bg-background text-foreground relative">
+      <AnimatedBackground />
       {/* Header */}
-      <header className="border-b border-border/40 backdrop-blur-sm sticky top-0 z-50">
+      <header className="border-b border-border/40 backdrop-blur-sm sticky top-0 z-50 relative">
         <div className="container flex items-center justify-between h-16">
           <div className="flex items-center gap-2">
             <Logo className="w-6 h-6" />
@@ -27,8 +29,8 @@ export default function Home() {
         </div>
       </header>
 
-      {/* Hero Section */}
-      <main className="flex-1">
+      {/* Main Content */}
+      <main className="flex-1 relative z-10">
         <section className="container py-20 md:py-32">
           <div className="max-w-4xl mx-auto text-center space-y-8">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-sm">

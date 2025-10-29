@@ -3,6 +3,7 @@ import { Check, Zap } from "lucide-react";
 import Logo from "@/components/Logo";
 import { Link } from "wouter";
 import { toast } from "sonner";
+import AnimatedBackground from "@/components/AnimatedBackground";
 
 export default function Pricing() {
   const handleCheckout = () => {
@@ -11,9 +12,10 @@ export default function Pricing() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col bg-background text-foreground">
+    <div className="min-h-screen flex flex-col bg-background text-foreground relative">
+      <AnimatedBackground />
       {/* Header */}
-      <header className="border-b border-border/40 backdrop-blur-sm sticky top-0 z-50">
+      <header className="border-b border-border/40 backdrop-blur-sm sticky top-0 z-50 relative">
         <div className="container flex items-center justify-between h-16">
           <Link href="/">
             <a className="inline-flex items-center gap-2 text-xl font-bold hover:text-primary transition-colors">
@@ -33,7 +35,7 @@ export default function Pricing() {
       </header>
 
       {/* Main Content */}
-      <main className="flex-1 container py-20">
+      <main className="flex-1 container py-20 relative z-10">
         <div className="max-w-4xl mx-auto space-y-12">
           {/* Header */}
           <div className="text-center space-y-4">

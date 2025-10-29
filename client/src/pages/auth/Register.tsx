@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import Logo from "@/components/Logo";
+import AnimatedBackground from "@/components/AnimatedBackground";
 import { useState } from "react";
 import { Link, useLocation } from "wouter";
 import { toast } from "sonner";
@@ -25,8 +26,9 @@ export default function Register() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background p-4">
-      <div className="w-full max-w-md space-y-8">
+    <div className="min-h-screen flex items-center justify-center bg-background text-foreground p-4 relative">
+      <AnimatedBackground />
+      <div className="w-full max-w-md space-y-8 relative z-10">
         <div className="text-center space-y-2">
           <Link href="/">
             <a className="inline-flex items-center gap-2 text-2xl font-bold hover:text-primary transition-colors">

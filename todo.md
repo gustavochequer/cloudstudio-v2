@@ -61,3 +61,9 @@
 - [x] Criar logo profissional para CloudStudio
 - [x] Substituir ícone Sparkles pelo logo customizado
 
+
+
+## Melhorias de UX/UI
+- [x] Adicionar fundo animado interativo com gradiente roxo/azul
+- [x] Implementar efeitos de movimento suaves para dar vida ao site
+
