@@ -48,3 +48,10 @@
 - [x] Remover oferta Founder de todas as páginas
 - [x] Manter apenas plano mensal R$ 99
 
+
+
+## Novas Funcionalidades
+- [x] Adicionar botão "Continuar com Google" na página de login
+- [x] Adicionar botão "Continuar com Google" na página de registro
+- [x] Implementar autenticação OAuth com Google (mockada)
+
