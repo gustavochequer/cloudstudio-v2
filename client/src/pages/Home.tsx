@@ -9,13 +9,13 @@ export default function Home() {
     <div className="min-h-screen flex flex-col bg-background text-foreground relative">
       <AnimatedBackground />
       {/* Header */}
-      <header className="border-b border-border/40 backdrop-blur-sm sticky top-0 z-50 relative">
+      <header className="border-b border-border/40 backdrop-blur-sm sticky top-0 z-50 relative px-4">
         <div className="container flex items-center justify-between h-16">
           <div className="flex items-center gap-2">
             <Logo className="w-6 h-6" />
             <span className="font-bold text-xl">CloudStudio</span>
           </div>
-          <nav className="flex items-center gap-6">
+          <nav className="flex items-center gap-3 sm:gap-6 text-sm sm:text-base">
             <Link href="/pricing">
               <a className="text-sm hover:text-primary transition-colors">Preços</a>
             </Link>
@@ -23,7 +23,7 @@ export default function Home() {
               <Button variant="ghost" size="sm">Entrar</Button>
             </Link>
             <Link href="/auth/register">
-              <Button size="sm">Começar Grátis</Button>
+              <Button size="sm" className="text-xs sm:text-sm">Começar Grátis</Button>
             </Link>
           </nav>
         </div>
@@ -31,24 +31,24 @@ export default function Home() {
 
       {/* Main Content */}
       <main className="flex-1 relative z-10">
-        <section className="container py-20 md:py-32">
+        <section className="container py-12 md:py-20 lg:py-32 px-4">
           <div className="max-w-4xl mx-auto text-center space-y-8">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-sm">
               <Logo className="w-4 h-4" />
               <span>Seu Diretor de Marketing Virtual</span>
             </div>
             
-            <h1 className="text-5xl md:text-7xl font-bold tracking-tight">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight">
               Posts de marca que
               <span className="text-primary"> funcionam 100%</span>
             </h1>
             
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto px-4">
               Esqueça as alucinações do ChatGPT. CloudStudio gera posts completos (imagem + legenda) 
               com a identidade da sua marca, de forma previsível e controlada.
             </p>
 
-            <div className="flex items-center justify-center gap-4 pt-4">
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 pt-4 px-4">
               <Link href="/auth/register">
                 <Button size="lg" className="gap-2">
                   Começar Agora <ArrowRight className="w-4 h-4" />
@@ -64,13 +64,13 @@ export default function Home() {
         </section>
 
         {/* Features Section */}
-        <section className="container py-20 border-t border-border/40">
+        <section className="container py-12 md:py-20 border-t border-border/40 px-4">
           <div className="max-w-5xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-8 md:mb-16">
               Por que CloudStudio, não ChatGPT?
             </h2>
             
-            <div className="grid md:grid-cols-3 gap-8">
+            <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-8">
               <div className="space-y-4 p-6 rounded-lg bg-card border border-border/40">
                 <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center">
                   <Target className="w-6 h-6 text-primary" />
@@ -105,12 +105,12 @@ export default function Home() {
         </section>
 
         {/* CTA Section */}
-        <section className="container py-20 border-t border-border/40">
-          <div className="max-w-3xl mx-auto text-center space-y-6 p-12 rounded-2xl bg-gradient-to-br from-primary/10 to-primary/5 border border-primary/20">
-            <h2 className="text-3xl md:text-4xl font-bold">
+        <section className="container py-12 md:py-20 border-t border-border/40 px-4">
+          <div className="max-w-3xl mx-auto text-center space-y-4 md:space-y-6 p-6 md:p-12 rounded-2xl bg-gradient-to-br from-primary/10 to-primary/5 border border-primary/20">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold">
               Comece a criar posts incríveis hoje
             </h2>
-            <p className="text-xl text-muted-foreground">
+            <p className="text-base sm:text-lg md:text-xl text-muted-foreground">
               Plano mensal por apenas <span className="text-primary font-bold">R$ 99</span>.
             </p>
             <Link href="/pricing">

@@ -35,11 +35,11 @@ export default function Pricing() {
       </header>
 
       {/* Main Content */}
-      <main className="flex-1 container py-20 relative z-10">
-        <div className="max-w-4xl mx-auto space-y-12">
+      <main className="flex-1 container py-12 md:py-20 relative z-10 px-4">
+        <div className="max-w-4xl mx-auto space-y-8 md:space-y-12">
           {/* Header */}
-          <div className="text-center space-y-4">
-            <h1 className="text-5xl font-bold">Plano Simples e Transparente</h1>
+          <div className="text-center space-y-3 md:space-y-4">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold">Plano Simples e Transparente</h1>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               Acesso completo ao CloudStudio por um preço justo
             </p>
@@ -47,8 +47,8 @@ export default function Pricing() {
 
           {/* Pricing Card */}
           <div className="max-w-lg mx-auto">
-            <div className="p-8 rounded-2xl bg-gradient-to-br from-primary/20 to-primary/5 border-2 border-primary">
-              <div className="space-y-6">
+            <div className="p-6 md:p-8 rounded-2xl bg-gradient-to-br from-primary/20 to-primary/5 border-2 border-primary">
+              <div className="space-y-4 md:space-y-6">
                 <div>
                   <div className="flex items-center gap-2 mb-2">
                     <Zap className="w-5 h-5 text-primary" />
@@ -61,10 +61,10 @@ export default function Pricing() {
 
                 <div className="space-y-2">
                   <div className="flex items-baseline gap-2">
-                    <span className="text-5xl font-bold">R$ 99</span>
+                    <span className="text-4xl sm:text-5xl font-bold">R$ 99</span>
                     <span className="text-muted-foreground">/mês</span>
                   </div>
-                  <p className="text-sm text-muted-foreground">
+                  <p className="text-base sm:text-lg md:text-xl text-muted-foreground px-4">
                     Cancele quando quiser, sem multas
                   </p>
                 </div>
